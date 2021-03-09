@@ -5,21 +5,22 @@ Secondary Color (Purple): #10206b;
 Third Color(Dark grey greenish): #282727;
 Fourth color (Greysh green): #25aaa0;
 */
-
-
-
-
-body{
+body {
   background-color: #41d4cf;
   font-family: 'Roboto Slab', serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -34,56 +35,79 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
+/* End body text  and color styles */
+img {
+  width: 100%;
+}
 
+/* buttons and links styling */
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
 .button.contact:active {
   background-color: #ff7f50;
   color: #ffffff;
