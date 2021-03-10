@@ -56,7 +56,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #ffffff;
+  color: #ff7f50;
 }
 
 a:hover,
@@ -85,7 +85,9 @@ a:active {
   transition: 0.2s opacity;
 }
 
-  /* .button:visited MESSED UP, added to fix white text, but errors given...*/
+.button:visited {
+  color: #ffffff;
+  }  /* .button:visited MESSED UP, added to fix white text, but errors given...*/
 
 
 .button:hover {
