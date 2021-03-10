@@ -49,13 +49,14 @@ img {
 /* buttons and links styling */
 a {
   color: #ff7f50;
+  background-color: #41d4cf;
   text-decoration: none;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #ffffff;
 }
 
 a:hover,
