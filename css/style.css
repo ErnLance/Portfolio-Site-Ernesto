@@ -84,10 +84,8 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:visited {
-color: #ffffff;
-text-decoration: none;
-}
+  /* .button:visited MESSED UP, added to fix white text, but errors given...*/
+
 
 .button:hover {
   opacity: 0.8;
