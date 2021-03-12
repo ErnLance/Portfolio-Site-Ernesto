@@ -4,7 +4,12 @@ Primary Color (Grey): #41d4cf;
 Secondary Color (Purple): #10206b;
 Third Color(Dark grey greenish): #282727;
 Fourth color (Greysh green): #25aaa0;
+Fifth color (hover,focus): #4455A4
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #41d4cf;
   font-family: 'Roboto Slab', serif;
@@ -18,6 +23,8 @@ body {
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Goldman', cursive;
+   /* only font-weight:400;*/
   line-height: 1.4;
 }
 
@@ -47,8 +54,9 @@ img {
 }
 
 /* buttons and links styling */
+
 a {
-  color: #ff7f50;
+  color: #10206b;
 
   text-decoration: none;
   /* No underlining */
@@ -56,39 +64,38 @@ a {
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #10206b;
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #4455A4;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #282727;
 }
 
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #10206b;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #282727;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:visited {
   color: #ffffff;
-  }  /* .button:visited MESSED UP, added to fix white text, but errors given...*/
-
+  }
 
 .button:hover {
   opacity: 0.8;
@@ -104,17 +111,106 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #10206b;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #10206b;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #10206b;
   color: #ffffff;
 }
 
 .button.contact:active {
-  background-color: #ff7f50;
+  background-color: #10206b;
   color: #ffffff;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#contact {
+  text-align: center;
+}
+#intro h1 {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #25aaa0;
+  box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+}
+nav > ul { /* may be wrong? display: inline-block;width: 100%; when added changed nav text position */
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #41d4cf;
+}
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #41d4cf;
+}
+nav > ul > li > a:active{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #41d4cf;
+}
+#hero {
+  background-color: #25aaa0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 133px;
+    width: 100%;
+}
+/* is this right??(down .social)*/
+.social > ul {
+display: inline-block;
+width: 100%;
+list-style-type: none;
+padding: 0;
+}
+.social > ul > li {
+display: inline-block;
+}
+.social {
+  background-color: #25aaa0;
+  padding:0;
+  display: inline-block;
+  width: 100%;
 }
