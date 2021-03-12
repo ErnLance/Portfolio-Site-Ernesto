@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Goldman', cursive;
-   /* only font-weight:400;*/
+  /* only font-weight:400;*/
   line-height: 1.4;
 }
 
@@ -54,10 +54,8 @@ img {
 }
 
 /* buttons and links styling */
-
 a {
   color: #10206b;
-
   text-decoration: none;
   /* No underlining */
 }
@@ -95,7 +93,7 @@ a:active {
 
 .button:visited {
   color: #ffffff;
-  }
+}
 
 .button:hover {
   opacity: 0.8;
@@ -125,29 +123,43 @@ a:active {
   background-color: #10206b;
   color: #ffffff;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
 #contact {
   text-align: center;
 }
+
 #intro h1 {
   text-align: center;
 }
+
 .center {
   text-align: center;
 }
+
 .logo {
   max-width: 250px;
 }
+
 header {
   background-color: #25aaa0;
   box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
@@ -155,62 +167,75 @@ header {
   padding: 10px 0;
   position: fixed;
 }
-nav > ul { /* may be wrong? display: inline-block;width: 100%; when added changed nav text position */
+
+nav>ul {
+  /* may be wrong? display: inline-block;width: 100%; when added changed nav text position */
   display: inline-block;
   width: 100%;
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #41d4cf;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #41d4cf;
 }
-nav > ul > li > a:active{
+
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #41d4cf;
 }
+
 #hero {
   background-color: #25aaa0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 main {
   padding-top: 133px;
-    width: 100%;
+  width: 100%;
 }
+
 /* is this right??(down .social)*/
-.social > ul {
-display: inline-block;
-width: 100%;
-list-style-type: none;
-padding: 0;
+.social>ul {
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
 }
-.social > ul > li {
-display: inline-block;
+
+.social>ul>li {
+  display: inline-block;
 }
+
 .social {
+  /*when applied, instagram icon dissapeared and margin appeared and unable to add top space...*/
   background-color: #25aaa0;
-  padding:0;
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
