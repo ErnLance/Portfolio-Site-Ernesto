@@ -182,16 +182,13 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 14px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
 nav>ul>li>a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #41d4cf;
 }
 
