@@ -112,6 +112,7 @@ a:active {
   color: #10206b;
   text-transform: uppercase;
   border: 2px solid #10206b;
+  margin: 25px 0;
 }
 
 .button.contact:hover {
@@ -170,7 +171,6 @@ header {
 }
 
 nav>ul {
-  /* may be wrong? display: inline-block;width: 100%; when added changed nav text position */
   display: inline-block;
   width: 100%;
   list-style-type: none;
@@ -215,7 +215,6 @@ main {
   padding-top: 133px;
 }
 
-/* is this right??(down .social)*/
 .social>ul {
   display: inline-block;
   width: 100%;
@@ -225,12 +224,58 @@ main {
 
 .social>ul>li {
   display: inline-block;
+  padding:20px 8px;
 }
 
 .social {
-  /*when applied, instagram icon dissapeared and margin appeared */
   background-color: #25aaa0;
+  font-size: 48px;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+/* DEVICES */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body {
+  font-size: 18px;
+}
+main {
+  padding-top: 99px;
+}
+#hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
