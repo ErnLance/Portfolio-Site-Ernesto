@@ -88,7 +88,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #282727;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 2.2s opacity;
 }
 
 .button:visited {
@@ -96,16 +96,12 @@ a:active {
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.3;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
-.button:active {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
+/*.button:active {} Removed*/
 
 .button.contact {
   background-color: transparent;
@@ -327,7 +323,7 @@ margin: 0 0 0.5em;
 
   [class*="col-"] {
     float: left;
-    padding: 0 10px;
+    padding: 0 25px;
   }
 
   .row::after {
@@ -335,6 +331,12 @@ margin: 0 0 0.5em;
     clear: both;
     display: table;
   }
+
+.row.story .column {
+
+padding: 0 25px;
+}
+
 
   #about-page h3 {
     margin-top: 0;
@@ -349,6 +351,17 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .project-page h3, .project-page p {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .project-page img {
+    margin: 40px 0;
   }
 }
   /* ==============================
