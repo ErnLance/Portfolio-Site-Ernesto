@@ -175,6 +175,7 @@ nav>ul {
   width: 100%;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -189,7 +190,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  color: #41d4cf;
+  color: #4a4a4a;
 }
 
 nav>ul>li>a:hover {
@@ -205,6 +206,9 @@ nav>ul>li>a:active {
   font-weight: 700;
   color: #41d4cf;
 }
+nav a.active {
+  color: #10206b !important;
+}
 
 #hero {
   background-color: #25aaa0;
@@ -216,8 +220,8 @@ main {
 }
 
 .social>ul {
-  display: inline-block;
-  width: 100%;
+  /*display: inline-block;
+  width: 100%; Removed*/
   list-style-type: none;
   padding: 0;
 }
@@ -230,9 +234,59 @@ main {
 .social {
   background-color: #25aaa0;
   font-size: 48px;
-  padding: 20px 0;
-  display: inline-block;
+  /*padding: 20px 0; Removed*/
+}
+/*animation*/
+#animation svg {
   width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 30s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 70s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 90s cloud-move-reverse infinite alternate linear;
 }
 
 /* DEVICES */
@@ -248,7 +302,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 11px;
   }
 
   body {
@@ -256,12 +310,16 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 86px;
   }
 
   #hero span {
     display: block;
   }
+
+.work h3 {
+margin: 0 0 0.5em;
+}
 
   .col-md-6 {
     width: 50%;
@@ -292,78 +350,17 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
+}
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
   @media only screen and (min-width: 1440px) {
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
   }
 
   /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
   @media only screen and (min-width: 1920px) {
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
 
-  /*animation*/
-  .animation {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
-  }
-
-  .sun {
-    animation: 30s color-change infinite alternate linear;
-  }
-
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-  .cloud-front {
-    animation: 70s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation: 90s cloud-move-reverse infinite alternate linear;
   }
