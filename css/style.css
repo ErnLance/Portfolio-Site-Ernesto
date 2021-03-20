@@ -102,7 +102,6 @@ a:active {
 }
 
 /*.button:active {} Removed*/
-
 .button.contact {
   background-color: transparent;
   color: #10206b;
@@ -202,6 +201,7 @@ nav>ul>li>a:active {
   font-weight: 700;
   color: #41d4cf;
 }
+
 nav a.active {
   color: #10206b !important;
 }
@@ -232,6 +232,7 @@ main {
   font-size: 48px;
   /*padding: 20px 0; Removed*/
 }
+
 /*animation*/
 #animation svg {
   width: 100%;
@@ -313,9 +314,9 @@ Medium devices (640px and larger)
     display: block;
   }
 
-.work h3 {
-margin: 0 0 0.5em;
-}
+  .work h3 {
+    margin: 0 0 0.5em;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -332,11 +333,9 @@ margin: 0 0 0.5em;
     display: table;
   }
 
-.row.story .column {
-
-padding: 0 25px;
-}
-
+  .row.story .column {
+    padding: 0 25px;
+  }
 
   #about-page h3 {
     margin-top: 0;
@@ -352,28 +351,27 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-  .col-lg-6 {
+
+  /*.col-lg-6 {
     width: 50%;
-  }
+  }*/
   .project-page h3, .project-page p {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
   }
+
   .project-page img {
     margin: 40px 0;
   }
 }
-  /* ==============================
+
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {}
 
-  }
-
-  /* ==============================
+/* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-  @media only screen and (min-width: 1920px) {
-
-  }
+@media only screen and (min-width: 1920px) {}
