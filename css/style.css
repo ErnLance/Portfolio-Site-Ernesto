@@ -153,28 +153,54 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 header {
   background-color: #25aaa0;
   box-shadow: 0px 7px 8px 0px rgba(50, 50, 50, 0.75);
-  text-align: center;
-  padding: 10px 0;
+  /*text-align: center; Removed*/
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 nav>ul {
-  display: inline-block;
-  width: 100%;
+  /*display: inline-block;
+  width: 100%;REMOVED*/
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -212,7 +238,7 @@ nav a.active {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 48px;
 }
 
 .social>ul {
@@ -291,15 +317,35 @@ main {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .logo {
+    max-width: 250px;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 11px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   body {
