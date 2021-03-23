@@ -341,7 +341,7 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: 0;
   }
 
   nav>ul>li {
