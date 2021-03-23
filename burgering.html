@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link href="img/favicon.ico" rel="shortcut icon">
+  <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+  <title>Burgering, Burger recipes app</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--hero-->
+  <main class="project-page">
+    <section class="intro" id="intro">
+      <div class="container">
+        <h1>Burgering</h1>
+        <picture>
+          <source srcset="img/burgering/burgeringdisplay@1.jpg" media="(max-width:767px)">
+          <img src="img/burgering/brgeringdisplay@2.jpg" alt="burgerdisplay">
+        </picture>
+        <p>
+          XXXXXIctum, from the Latin: Beat, Pulse, Tempo, or the entry of part of a section of the orchestra.
+          Ictum is a music player app with a vintage looking developed to fit armoniously more modern colours. The idea was to create a music player app without unnecessary getaways, the rersult is a userfriendly app, with all the necessary
+          features.XXXX
+        </p>
+      </div>
+    </section>
+    <section class="process" id="process">
+      <div class="container">
+        <h2 class="center">My process</h2>
+        <div>
+          <picture>
+            <source srcset="img/burgering/inspboard-mockup@1x.jpg" media="(max-width:767px)">
+            <img src="img/burgering/inspboard-mockup@2x.jpg" alt="Inspiration">
+          </picture>
+          <h3>Ideation</h3>
+          <p>
+            Inspired by concert vibes, urban art and modern technology. The challenge was to create a modern product with a vintage looking.
+          </p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/burgering/wireframesp@1x.jpg" media="(max-width:767px)">
+            <img src="img/burgering/wireframes@2x.jpg" alt="Wireframes">
+          </picture>
+          <h3>Wireframes</h3>
+          <p>
+            The idea was to create a music player app, without unnecessary getaways.
+          </p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/ictum/design@1x.jpg" media="(max-width:767px)">
+            <img src="img/ictum/design@2x.jpg" alt="Style guide">
+          </picture>
+          <h3>Design</h3>
+          <p>
+            Choosing colours and typography that would give this feelings of modern but obsolete at the same time.
+          </p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/ictum/prototypes@1x.jpg" media="(max-width:767px)">
+            <img src="img/ictum/prototypes@2x.jpg" alt="Prototypes">
+          </picture>
+          <h3>Prototype</h3>
+          <p>
+            The rersult is a userfriendly app, with all the necessary features to search, find and share music.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--footer-->
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p>
+        Do you like my work and want to discuss opportunities? Please get in touch.
+      </p>
+      <div class="email"> <a href="mailto:elance846@gmail.com" class="button contact">Email me</a>
+      </div>
+      <!--Social Media Layout and Placeholders-->
+      <div class="social">
+        <ul>
+          <li><a href="https://www.behance.net/ernestolancell" target=_blank>
+              <i class="fab fa-behance-square"></i>
+            </a></li>
+          <li><a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+          <li><a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+            </a></li>
+          <li><a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram-square"></i>
+            </a></li>
+
+        </ul>
+      </div>
+      <p>
+        Copyright Ernesto Lancellotti 2021
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
